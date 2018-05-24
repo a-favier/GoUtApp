@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.afavier.gout.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/my_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_toolbar"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="@string/title_activity_find_event"
+                android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_find"
+                android:gravity="center_horizontal"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/form_eventName"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+                <EditText
+                    android:id="@+id/form_eventName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/form_pseudoOrganizer"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+                <EditText
+                    android:id="@+id/form_pseudoOrganizer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/form_city"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+                <EditText
+                    android:id="@+id/form_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/form_postalCode"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+                <EditText
+                    android:id="@+id/form_postalCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/form_dateStart"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+                <EditText
+                    android:id="@+id/form_dateStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/label_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/form_dateEnd"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+                <EditText
+                    android:id="@+id/form_dateEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/label_width"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/form_booking"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+                <RadioGroup
+                    android:id="@+id/form_booking"
+                    android:layout_width="217dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/booking_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/booking_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_findEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

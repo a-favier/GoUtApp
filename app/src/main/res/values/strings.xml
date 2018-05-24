@@ -1,0 +1,36 @@
+<resources>
+    <!--Title Activity-->
+    <string name="title_activity_find_event">Find event</string>
+    <string name="title_activity_list_event">List event</string>
+    <string name="title_activity_view_event">Event</string>
+
+    <string name="app_name">GoUt</string>
+    <!--<string name="title_findEvent">Find event</string>-->
+    <string name="send">Send</string>
+    <string name="to">to</string>
+    <string name="viewAll">View All</string>
+    <string name="participate">I'm participate !</string>
+
+    <string name="decription">Description</string>
+    <string name="organiser">Organiser : </string>
+    <string name="dateOfEvent">Date of event : </string>
+    <string name="placeOfEvent">Place of event : </string>
+    <string name="bookingEvent">Warning : Obligatory reservation</string>
+    <string name="categories">Event categories : </string>
+    <string name="clientele">Event clientele : </string>
+    <string name="participants">Participants : </string>
+
+    <string name="form_eventName">Event Name</string>
+    <string name="form_pseudoOrganizer">Pseudo organizer</string>
+    <string name="form_postalCode">Postal Code</string>
+    <string name="form_city">City</string>
+    <string name="form_booking">Booking</string>
+    <string name="form_dateStart">Date Start</string>
+    <string name="form_dateEnd">Date End</string>
+
+    <string name="info_find">Fill only field how you want filter</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="loading">Loading ...</string>
+</resources>
